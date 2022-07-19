@@ -1,0 +1,48 @@
+/*====  RESETS ============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*====  VARIABLES ============================ */
+:root {
+    /* colors */
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --border-color: #00FF00;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    
+    /* fonts */
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1rem;
+    
+    --body-font: 'Merriweather Sans', sans-serif;
+}
+
+/*===  BASE ============================ */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 400 1rem var(--body-font);
+    color: var(--text-color);
+    background: var(--body-bg-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+.title {
+    font: 700 var(--title-font-size) var(--body-font);
+    color: var(--text-color);
+    -webkit-font-smoothing: auto;
+}
