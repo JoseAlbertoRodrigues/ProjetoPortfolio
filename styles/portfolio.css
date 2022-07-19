@@ -57,7 +57,7 @@ body {
 .portfolio {
     display: grid;
     grid-template-columns: 2fr 4fr;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
 }
 
 .box-left .section {
@@ -222,6 +222,21 @@ body {
     font-size: .8rem;
 }
 
+/*====  BOX-RIGHT ============================ */
+
+/* .right {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+
+    grid-template-areas: 
+        "my-projects my-projects"
+        "my-files my-folders"
+        "recent-posts recent-posts"
+        "posts posts";
+} */
+
 /*====  MY-PROJECTS ============================ */
 #my-projects {
     margin-left: 1rem;
@@ -238,4 +253,176 @@ body {
 
 #my-projects .text p {
     margin-right: 1.875rem;
+}
+
+/*====  MY-FILES ============================ */
+.circle {
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    
+    margin-right: 1rem;
+    
+    border-radius: 100%;
+    
+    background: #E7DE79;
+    border: 2px solid #837E9F;
+}
+
+#my-files {
+    margin-left: 1rem;
+    margin-right: 2.5rem;
+
+    /* grid-area: my-files; */
+}
+
+#my-files header {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1.375rem;
+}
+
+#my-files header img {
+    margin-right: 1rem;
+}
+
+#my-files .text {
+    margin-bottom: 2rem;
+}
+
+#my-files .icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#my-files .icons .link {
+    display: flex;
+    align-items: center;
+}
+
+#my-files .icons .link {
+    margin-right: 1.875rem;
+}
+
+#my-files .icons img {
+    margin-right: .6rem;
+}
+
+#my-files .icons span {
+    margin-right: 1.5rem;
+}
+
+/*====  MY-FOLDERS ============================ */
+#my-folders {
+    margin-left: 1rem;
+    margin-right: 2.5rem;
+
+    /* grid-area: my-folders; */
+}
+
+#my-folders {
+    margin-left: 1rem;
+    margin-right: 2.5rem;
+
+    grid-area: my-files;
+}
+
+#my-folders header {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1.375rem;
+}
+
+#my-folders header img {
+    margin-right: 1rem;
+}
+
+#my-folders .text {
+    margin-bottom: 2rem;
+}
+
+#my-folders .icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#my-folders .icons .link {
+    display: flex;
+    align-items: center;
+}
+
+#my-folders .icons .link {
+    margin-right: 1.875rem;
+}
+
+#my-folders .icons img {
+    margin-right: .6rem;
+}
+
+#my-folders .icons span {
+    margin-right: 1.5rem;
+}
+/*====  RECENT-POSTS ============================ */
+#recent-posts {
+    margin-left: 1rem;
+    margin-right: 2.5rem;
+
+    /* grid-area: recent-posts; */
+}
+
+#recent-posts .container .text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#recent-posts .text p {
+    margin-right: 1.875rem;
+}
+
+
+/*====  POSTS ============================ */
+#posts {
+    margin-left: 1rem;
+    margin-right: 2.5rem;
+    
+    /* grid-area: posts; */
+}
+
+#posts .container {
+    display: flex;
+    align-items: center;
+}
+
+#posts .image {
+    content: '';    
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+#posts .text {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#posts .text h3 {
+    margin-bottom: 1rem;
+}
+
+#posts .subtitle h3 {
+    font-size: 1.1rem;
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#posts .subtitle ul {
+    list-style: none;
+    display: flex;
+}
+
+#posts .subtitle ul li {
+    margin-right: 1.5rem;
 }
