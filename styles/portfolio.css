@@ -198,3 +198,26 @@ body {
 #experience ul li span {
     font-size: .8rem;
 }
+
+/*====  EDUCATION ============================ */
+#education header {
+    margin: -1rem 0 1.25rem -1rem;
+}
+
+#education ul {
+    list-style: disc;
+}
+
+#education ul li {
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+}
+
+#education ul li p {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+#education ul li span {
+    font-size: .8rem;
+}
