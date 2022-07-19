@@ -221,3 +221,21 @@ body {
 #education ul li span {
     font-size: .8rem;
 }
+
+/*====  MY-PROJECTS ============================ */
+#my-projects {
+    margin-left: 1rem;
+    margin-right: 2.5rem;
+
+    /* grid-area: my-projects; */
+}
+
+#my-projects .container .text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#my-projects .text p {
+    margin-right: 1.875rem;
+}
