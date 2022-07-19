@@ -57,7 +57,6 @@ body {
 .portfolio {
     display: grid;
     grid-template-columns: 2fr 4fr;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
 }
 
 .box-left .section {
@@ -224,25 +223,23 @@ body {
 
 /*====  BOX-RIGHT ============================ */
 
-/* .right {
+.right {
     display: grid;
-    
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5,1fr);
 
     grid-template-areas: 
         "my-projects my-projects"
         "my-files my-folders"
         "recent-posts recent-posts"
         "posts posts";
-} */
+}
 
 /*====  MY-PROJECTS ============================ */
 #my-projects {
     margin-left: 1rem;
     margin-right: 2.5rem;
 
-    /* grid-area: my-projects; */
+    grid-area: my-projects;
 }
 
 #my-projects .container .text {
@@ -273,7 +270,7 @@ body {
     margin-left: 1rem;
     margin-right: 2.5rem;
 
-    /* grid-area: my-files; */
+    grid-area: my-files;
 }
 
 #my-files header {
@@ -288,6 +285,10 @@ body {
 
 #my-files .text {
     margin-bottom: 2rem;
+}
+
+#my-files .text p {
+    margin-right: 1rem;
 }
 
 #my-files .icons {
@@ -317,14 +318,7 @@ body {
     margin-left: 1rem;
     margin-right: 2.5rem;
 
-    /* grid-area: my-folders; */
-}
-
-#my-folders {
-    margin-left: 1rem;
-    margin-right: 2.5rem;
-
-    grid-area: my-files;
+    grid-area: my-folders;
 }
 
 #my-folders header {
@@ -339,6 +333,10 @@ body {
 
 #my-folders .text {
     margin-bottom: 2rem;
+}
+
+#my-folders .text p {
+    margin-right: 1rem;
 }
 
 #my-folders .icons {
@@ -367,7 +365,7 @@ body {
     margin-left: 1rem;
     margin-right: 2.5rem;
 
-    /* grid-area: recent-posts; */
+    grid-area: recent-posts;
 }
 
 #recent-posts .container .text {
@@ -386,7 +384,7 @@ body {
     margin-left: 1rem;
     margin-right: 2.5rem;
     
-    /* grid-area: posts; */
+    grid-area: posts;
 }
 
 #posts .container {
