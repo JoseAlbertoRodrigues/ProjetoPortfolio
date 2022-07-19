@@ -138,4 +138,36 @@ body {
     margin-right: 1.25rem;
 }
 
+/*====  TECHNOLOGIES ============================ */
+.grid-template-columns-3 {
+    grid-template-columns: repeat(3,1fr);
+}
 
+ #technologies header {
+    margin: -1rem 0 1.25rem -1rem;
+ }
+
+ /* #technologies .cards {
+    margin: -.6rem -1.5rem 0; /* top (right , left) bottom*/
+/* } */
+
+#technologies .cards {
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+}
+
+#technologies .cards .card {
+    background: var(--bg-techs);
+    color: black;
+    margin: .5rem; 
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    font-size: .8rem; /* qualquer coisa eu troco aqui*/
+    font-weight: bolder;
+    border-radius: 1rem;
+
+    padding: .5rem 0;  
+}
