@@ -147,10 +147,6 @@ body {
     margin: -1rem 0 1.25rem -1rem;
  }
 
- /* #technologies .cards {
-    margin: -.6rem -1.5rem 0; /* top (right , left) bottom*/
-/* } */
-
 #technologies .cards {
     margin-left: -.5rem;
     margin-right: -.5rem;
@@ -170,4 +166,35 @@ body {
     border-radius: 1rem;
 
     padding: .5rem 0;  
+}
+
+/*====  TECHNOLOGIES ============================ */
+#experience header {
+    margin: -1rem 0 1.25rem -1rem;
+}
+
+#experience ul {
+    list-style: disc;
+}
+
+#experience ul li {
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+}
+
+#experience ul li p {
+    font-size: 1.2rem;
+}
+
+
+#experience ul li p:first-child {
+    font-weight: bolder;
+}
+
+#experience ul li p:last-child {
+    font-size: .9rem;
+}
+
+#experience ul li span {
+    font-size: .8rem;
 }
