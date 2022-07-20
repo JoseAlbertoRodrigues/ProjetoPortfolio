@@ -13,6 +13,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 /*====  VARIABLES ============================ */
 :root {
     /* colors */
@@ -134,6 +139,8 @@ body {
 }
 
 #social img {
+    width: 24px;
+    height: 24px;
     margin-right: 1.25rem;
 }
 
@@ -280,6 +287,8 @@ body {
 }
 
 #my-files header img {
+    width: 24px;
+    height: 24px;
     margin-right: 1rem;
 }
 
@@ -328,6 +337,8 @@ body {
 }
 
 #my-folders header img {
+    width: 24px;
+    height: 24px;
     margin-right: 1rem;
 }
 
