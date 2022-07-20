@@ -198,11 +198,15 @@ body {
 }
 
 #experience ul li p:last-child {
-    font-size: .9rem;
+    font-weight: bolder;
+    font-size: 1rem;
 }
 
 #experience ul li span {
-    font-size: .8rem;
+    display: block;
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: .4rem .5rem;
 }
 
 /*====  EDUCATION ============================ */
@@ -225,7 +229,10 @@ body {
 }
 
 #education ul li span {
-    font-size: .8rem;
+    display: block;
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: .4rem .5rem;
 }
 
 /*====  BOX-RIGHT ============================ */
