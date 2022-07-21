@@ -132,12 +132,12 @@ body {
     color: var(--bg-techs);
     font-size: 1.5rem;
 
-    margin-right: 2rem;
+    margin-right: 1.2rem;
 }
 
 /*====  TECHNOLOGIES ============================ */
 .grid-template-columns-3 {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
 }
 
  #technologies header {
@@ -283,11 +283,11 @@ body {
 }
 
 #my-file .icons i {
-    margin-right: .6rem;
+    margin-right: .3rem;
 }
 
 #my-file .icons span {
-    margin-right: 1rem;
+    margin-right: .5rem;
 } 
 
 /*====  MY-FOLDERS ============================ */
@@ -320,11 +320,11 @@ body {
 }
 
 #my-folders .icons i {
-    margin-right: .6rem;
+    margin-right: .3rem;
 }
 
 #my-folders .icons span {
-    margin-right: 1rem;
+    margin-right: .5rem;
 } 
 
 
