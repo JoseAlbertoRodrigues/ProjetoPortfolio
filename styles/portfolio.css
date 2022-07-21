@@ -457,13 +457,11 @@ body {
 
     .left {
         grid-area: left;
-        margin: 0 auto;
-        max-width: 22rem;
+        min-width: 22rem;
     }
 
     .right {
         grid-area: right;
-        margin: 0 auto;
     }
 
     /*====  BOX-LEFT ============================ */
@@ -503,7 +501,7 @@ body {
     }
 
     /*====  LAYOUT ============================ */
-    /*====  RIGHT ============================ */
+    /*====  LEFT ============================ */
     /*====  SOCIAL ============================ */
     #social .social {
         display: flex;
@@ -561,25 +559,7 @@ body {
         font-weight: bolder;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /*====  RIGHT ============================ */
     .my-projects {
         grid-area: my-projects;
     }
@@ -596,3 +576,36 @@ body {
         grid-area: posts;
     }
 }
+
+/* large devices: 992 > */
+@media (min-width: 992px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        grid-template-areas: 
+            "left right";
+    }
+
+    .left {
+        grid-area: left;
+    }
+
+    .right {
+        grid-area: right;
+    }
+
+    /*====  POSTS ============================ */
+    #posts .subtitle ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #posts .subtitle ul li {
+        margin-right: .8rem;
+    }
+}
+
+/*========= MEDIA QUERIES =========*/
+/* extra large devices: 1200 > */
+@media (min-width: 1200px) {}
