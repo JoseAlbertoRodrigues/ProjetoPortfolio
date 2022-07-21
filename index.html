@@ -7,8 +7,20 @@
     <meta name="author" content="José alberto rodrigues neto">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Portfolio</title>
     <link rel="stylesheet" href="./styles/portfolio.css">
+    <!-- <link rel="icon" href="favicon-16.png" sizes="16x16">
+    <link rel="icon" href="favicon-32.png" sizes="32x32">
+    <link rel="icon" href="favicon-48.png" sizes="48x48">
+    <link rel="icon" href="favicon-64.png" sizes="64x64"> -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <title>Projeto Portfolio</title>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="./assets/fonts/style.css">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/portfolio-final.css">
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -17,11 +29,12 @@
     <main>
         <section class="portfolios">
             <section class="portfolio">
-                <section class="box-left">
-                    <section class="left">
+                <section class="left">
+                    <section class="box-left">
+                    
                         <!-- PROFILE -->
                         <section class="section" id="profile">
-                            <div class="container grid">
+                            <div class="container">
                                 <div class="image"></div>
                                 <div class="text">
                                     <h1 class="title">José Alberto Neto</h1>
@@ -29,40 +42,46 @@
                                 </div>
                             </div>
                         </section>
-
+    
                         <!-- SOCIAL -->
                         <section class="section" id="social">
-                            <div class="container grid">
-                                <div class="social grid">
-                                    <a href="https://instagram.com" target="_blank">
-                                        <img src="./assets/map-pin.svg" width="24" height="24" alt="Link da localidade"> Brasil
-                                    </a>
-                                    <a href="https://instagram.com" target="_blank">
-                                        <img src="./assets/briefcase.svg" width="24" height="24" alt="Link do trabalho"> Rocketseat
-                                    </a>
-                                    <a href="https://instagram.com" target="_blank">
-                                        <img src="./assets/github.svg" width="24" height="24" alt="Link do meu gitHub"> JoseAlbertoRodrigues
-                                    </a>
-                                    <a href="https://instagram.com" target="_blank">
-                                        <img src="./assets/linkedin.svg" width="24" height="24" alt="Link do meu linkedin"> JoseAlbertoRodrigues
-                                    </a>
-                                    <a href="https://instagram.com" target="_blank">
-                                        <img src="./assets/twitter.svg" width="24" height="24" alt="Link do meu twitter"> JoseAlberto
-                                    </a>
-                                    <a href="https://instagram.com" target="_blank">
-                                        <img src="./assets/globe.svg" width="24" height="24" alt="Link do meu site"> https://josealberto.dev
-                                    </a>
-                                    <a href="https://instagram.com" target="_blank">
-                                        <img src="./assets/mail.svg" width="24" height="24" alt="Link do e-mail">
-                                        josealbertoneto@yahoo.com.br
-                                    </a>
+                            <section class="container">
+                                <div class="social">
+                                  <a href="https://instagram.com" target="_blank">
+                                    <i class="icon-map-pin"></i>
+                                    Brasil
+                                  </a>
+                                  <a href="https://instagram.com" target="_blank">
+                                      <i class="icon-briefcase1"></i>
+                                      Rocketseat
+                                  </a>
+                                  <a href="https://instagram.com" target="_blank">
+                                    <i class="icon-github1"></i>
+                                    JoseAlberto
+                                  </a>
+                                  <a href="https://instagram.com" target="_blank">
+                                    <i class="icon-linkedin"></i>
+                                    JoseAlbertoRodri
+                                  </a>
+                                  <a href="https://instagram.com" target="_blank">
+                                    <i class="icon-twitter1"></i>
+                                    JoseAlberto
+                                  </a>
+                                  <a href="https://instagram.com" target="_blank">
+                                    <i class="icon-globe"></i>
+                                    https://josealberto.dev
+                                  </a>
+                                  <a href="https://instagram.com" target="_blank">
+                                    <i class="icon-mail"></i>
+                                    josealbertoneto@yahoo.com.br
+                                  </a>
                                 </div>
-                            </div>
+                            </section>
                         </section>
 
                         <!-- TECHNOLOGIES -->
                         <section class="section" id="technologies">
-                            <div class="container grid">
+                            <div class="container">
                                 <header>
                                     <h2 class="title">Tecnologias</h2>
                                 </header>
@@ -82,7 +101,7 @@
 
                         <!-- EXPERIENCE -->
                         <section class="section" id="experience">
-                            <section class="container grid">
+                            <section class="container">
                                 <header>
                                     <h2 class="title">Experiências</h2>
                                 </header>
@@ -115,7 +134,7 @@
 
                         <!-- EDUCATION -->
                         <section class="section" id="education">
-                            <section class="container grid">
+                            <section class="container">
                                 <header>
                                     <h2 class="title">Educação</h2>
                                 </header>
@@ -147,13 +166,13 @@
                         </section>
                     </section>
                 </section>
-                    
+        
 
-                <section class="box-right">
-                    <section class="right">
-                        <!-- MY-PROJECTS -->
+                <section class="right">
+                    <section class="box-right">
+                            <!-- MY-PROJECTS -->
                         <section class="section" id="my-projects">
-                            <div class="container grid">
+                            <div class="container">
                                 <div class="text">
                                     <h2 class="title">My Projects</h2>
                                     <p>Veja todos</p>
@@ -161,11 +180,11 @@
                             </div>
                         </section>
 
-                        <!-- MY-FILES -->
-                        <section class="section" id="my-files">
-                            <div class="container grid">
+                        <!-- MY-FILE -->
+                        <section class="section" id="my-file">
+                            <div class="container">
                                 <header>
-                                    <img src="./assets/folder.svg" width="24px" height="24px" alt="icone do arquivo">
+                                    <i class="icon-folder"></i>
                                     <h3>my-onix</h3>
                                 </header>
                                 <div class="text">
@@ -174,9 +193,9 @@
         
                                 <div class="icons">
                                     <div class="link">
-                                        <img src="./assets/star.svg" width="24" height="24" alt="icone da estrela">
+                                        <i class="icon-star"></i>
                                         <span>100</span>
-                                        <img src="./assets/git-branch.svg" width="24" height="24" alt="icone da branck">
+                                        <i class="icon-git-branch"></i>
                                         <span>100</span>
                                     </div>
                                     <div class="link">
@@ -187,12 +206,12 @@
                                 </div>
                             </div>
                         </section>
-        
+
                         <!-- MY-FOLDERS -->
                         <section class="section" id="my-folders">
-                            <div class="container grid">
+                            <div class="container">
                                 <header>
-                                    <img src="./assets/folder.svg" width="24" height="24" alt="icone do arquivo">
+                                    <i class="icon-folder"></i>
                                     <h3>my-onix</h3>
                                 </header>
                                 <div class="text">
@@ -201,9 +220,9 @@
         
                                 <div class="icons">
                                     <div class="link">
-                                        <img src="./assets/star.svg" width="24" height="24" alt="icone da estrela">
+                                        <i class="icon-star"></i>
                                         <span>100</span>
-                                        <img src="./assets/git-branch.svg" width="24" height="24" alt="icone da branch">
+                                        <i class="icon-git-branch"></i>
                                         <span>100</span>
                                     </div>
                                     <div class="link">
@@ -214,20 +233,20 @@
                                 </div>
                             </div>
                         </section>
-        
+
                         <!-- RECENT-POSTS -->
                         <section class="section" id="recent-posts">
-                            <div class="container grid">
+                            <div class="container">
                                 <div class="text">
                                     <h2 class="title">Recent Post</h2>
                                     <p>Veja todos</p>
                                 </div>
                             </div>
                         </section>
-        
+
                         <!-- POSTS -->
                         <section class="section" id="posts">
-                            <div class="container grid">
+                            <div class="container">
                                 <div class="image">
                                 </div>
                                 <div class="text">
@@ -245,7 +264,7 @@
                                 </div>
                             </div>
                         </section>
-                    </section>
+                    </section>    
                 </section>
             </section>
         </section>
