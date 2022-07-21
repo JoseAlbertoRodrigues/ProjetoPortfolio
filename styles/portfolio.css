@@ -61,13 +61,15 @@ body {
 }
 
 .portfolio {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1fr 2fr; */
 }
 
-.box-left .section {
+.box-left .section,
+.box-right .section {
     padding: 1.875rem 2.5rem;
-    margin-right: 1.875rem;
+    /* margin-right: 1.875rem; */
     margin-bottom: 2.5rem;
 
     background: var(--bg-cards);
@@ -77,7 +79,7 @@ body {
 }
 
 /*====  BOX-RIGHT ============================ */
-.box-right {
+/* .box-right {
     display: grid;
 
     grid-template-columns: 1fr 1fr;
@@ -88,9 +90,9 @@ body {
         "my-file my-folders"
         "recent-posts recent-posts"
         "posts posts";
-}
+} */
 
-.box-right .section {
+/* .box-right .section {
     padding: 1.875rem 2.5rem;
     
     margin-left: 1.875rem;
@@ -99,7 +101,7 @@ body {
     background: var(--bg-cards);
     border-radius: 1rem;
     box-shadow: 3px 3px 2px rgba(17, 15, 15, 0.3);
-}
+} */
 
 /*====  LAYOUT ============================ */
 .grid {
@@ -251,11 +253,11 @@ body {
     padding: .4rem .5rem;
 }
 
-/*====  LEFT ============================ */
+/*====  RIGHT ============================ */
 /*====  MY-PROJECTS ============================ */
-#my-projects {
+/* #my-projects {
     grid-area: my-projects;
-}
+} */
 
 #my-projects .container .text {
     display: flex;
@@ -284,9 +286,9 @@ body {
     border: 2px solid #837E9F;
 }
 
-#my-file {
+/* #my-file {
     grid-area: my-file;
-}   
+}    */
 
 #my-file header {
     display: flex;
@@ -325,9 +327,9 @@ body {
 } 
 
 /*====  MY-FOLDERS ============================ */
-#my-folders {
+/* #my-folders {
     grid-area: my-folders;
-}
+} */
 
 #my-folders header {
     display: flex;
@@ -367,9 +369,9 @@ body {
 
 
 /*====  RECENT-POST ============================ */
-#recent-posts {
+/* #recent-posts {
     grid-area: recent-posts;
-}
+} */
 
 #recent-posts .container .text {
     display: flex;
@@ -386,13 +388,14 @@ body {
 }
 
 /*====  POSTS ============================ */
-#posts {
+/* #posts {
     grid-area: posts;
-}
+} */
 
 #posts .container {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 #posts .image {
@@ -401,11 +404,15 @@ body {
     height: 8rem;
     border-radius: 100%;
     background-color: black;
+
+    margin-bottom: 1.875rem;
+    border: 2px solid var(--border-color);
 }
 
 #posts .text {
-    margin-left: 2rem;
-    margin-bottom: 1.5rem;
+    /* margin-left: 2rem; */
+    /* margin-bottom: 1.5rem; */
+    text-align: left;
 }
 
 #posts .text h3 {
@@ -414,16 +421,155 @@ body {
 
 #posts .subtitle h3 {
     font-size: 1.1rem;
-
+    
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 #posts .subtitle ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
 }
 
 #posts .subtitle ul li {
-    margin-right: 1.5rem;
+    /* margin-right: 1.5rem; */
+    margin-bottom: 1rem;
+} 
+
+
+/* medium devices: 768 > */
+@media (min-width: 768px) {
+    /*====  VARIABLES ============================ */
+    :root {     
+        /* fonts */
+        --title-font-size: 1.5rem;
+        --subtitle-font-size: 1rem;    
+    }
+
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas: 
+            "left right";
+    }
+
+    .left {
+        grid-area: left;
+        margin: 0 auto;
+        max-width: 22rem;
+    }
+
+    .right {
+        grid-area: right;
+        margin: 0 auto;
+    }
+
+    /*====  BOX-LEFT ============================ */
+    .box-left .section {
+        padding: 1.5rem 2rem;
+        margin-right: 1.875rem;
+        margin-bottom: 2.5rem;
+
+        background: var(--bg-cards);
+
+        border-radius: 1rem;
+        box-shadow: 3px 3px 2px rgba(17, 15, 15, 0.3);
+    }
+
+    /*====  BOX-RIGHT ============================ */
+    .box-right {
+        display: grid;
+    
+        grid-template-columns: 1fr;
+    
+        grid-template-areas: 
+            "my-projects"
+            "my-file" 
+            "my-folders"
+            "recent-posts"
+            "posts";
+    }
+
+    .box-right .section {
+        padding: 1.5rem 2rem;
+        
+        margin-bottom: 2.5rem; 
+
+        background: var(--bg-cards);
+        border-radius: 1rem;
+        box-shadow: 3px 3px 2px rgba(17, 15, 15, 0.3);
+    }
+
+    /*====  LAYOUT ============================ */
+    /*====  RIGHT ============================ */
+    /*====  PROFILE ============================ */
+    #profile .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #profile .image {
+        width: 8rem;
+        height: 8rem;
+
+        background: black;
+        border-radius: 50%;
+        
+        margin-bottom: 1.875rem;
+        border: 2px solid var(--border-color);
+    }
+
+    #profile .text {
+        text-align: center;
+    }
+
+    #profile .text h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.625rem;
+    }
+
+    #profile .text p {
+        font-size: var(--subtitle-font-size);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .my-projects {
+        grid-area: my-projects;
+    }
+    .my-file {
+        grid-area: my-file;
+    }
+    .my-folders {
+        grid-area: my-folders;
+    }
+    .recent-posts {
+        grid-area: recent-posts;
+    }
+    .posts {
+        grid-area: posts;
+    }
 }
