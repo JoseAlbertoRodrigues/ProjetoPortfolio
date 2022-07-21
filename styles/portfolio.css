@@ -504,35 +504,24 @@ body {
 
     /*====  LAYOUT ============================ */
     /*====  RIGHT ============================ */
-    /*====  PROFILE ============================ */
-    #profile .container {
+    /*====  SOCIAL ============================ */
+    #social .social {
+        display: flex;
+    }
+
+    #social .social a {
         display: flex;
         flex-direction: column;
-        align-items: center;
-    }
-
-    #profile .image {
-        width: 8rem;
-        height: 8rem;
-
-        background: black;
-        border-radius: 50%;
         
-        margin-bottom: 1.875rem;
-        border: 2px solid var(--border-color);
+        color: var(--bg-techs);
+        
+        margin-bottom: 2rem;
     }
 
-    #profile .text {
-        text-align: center;
-    }
-
-    #profile .text h1 {
-        font-size: 1.5rem;
-        margin-bottom: 0.625rem;
-    }
-
-    #profile .text p {
-        font-size: var(--subtitle-font-size);
+    #social .social a i {
+        color: var(--bg-techs);
+        font-size: 1.6rem;
+        margin: .5rem;
     }
 
 
