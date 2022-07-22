@@ -21,8 +21,10 @@ img {
 /*====  VARIABLES ============================ */
 :root {
     /* colors */
+    /* --body-bg-color: #22212C; */
+    /* --text-color: #837E9F; */
     --body-bg-color: #22212C;
-    --text-color: #837E9F;
+    --text-color: #7a6dbd;
     --border-color: #00FF00;
     --bg-cards: #302F3D;
     --bg-techs: #CB92B1;
