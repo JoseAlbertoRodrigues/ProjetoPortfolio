@@ -320,7 +320,7 @@ body {
 }
 
 #my-folders .icons i {
-    margin-right: .3rem;
+    margin-right: .3 rem;
 }
 
 #my-folders .icons span {
@@ -386,6 +386,61 @@ body {
     margin-bottom: 1rem;
 } 
 
+/*====  FOOTER ============================ */
+footer {
+    background: var(--bg-techs);
+}
+
+footer.section {
+    padding: 4rem 2rem;
+}
+
+footer .brand {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+footer .brand a {
+    color: black;
+}
+
+footer .brand a:hover, 
+footer .brand span:hover {
+    color: #00FF00;
+}
+
+footer .brand span {
+    color: var(--body-bg-color);
+}
+
+footer .brand p {
+    margin: 1rem 0;
+    color: black;
+}
+
+footer .social {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .social a {
+    transition: 0.3s;
+    display: inline-block;
+}
+
+footer .social a:hover {
+    transform: translateY(-10px);
+}
+
+footer i {
+    font-size: 1.8rem;
+    color: var(--text-color-light);
+}
+
+footer i:hover {
+    font-size: 2.5rem;
+    color: red;
+}
 
 /* medium devices: 768 > */
 @media (min-width: 768px) {
